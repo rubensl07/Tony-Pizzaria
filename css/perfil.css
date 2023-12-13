@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-image: url(../img/fundoCadastro.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body>div{
+    z-index: 3;
+}
+h1{
+    display: none;
+}
+.fundo{
+    background: linear-gradient(rgb(252, 122, 0), rgba(252, 122, 0, 0));
+    background-color: #FC7900;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    opacity: .5;
+    z-index: 1;
+}
+.voltar{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: small;
+    margin: 10% 0 0 5%;
+    align-items: center;
+    width: fit-content;
+    text-wrap: nowrap;
+}
+.voltar>h2{
+    margin-left: 20%;
+    width: fit-content;
+}
+.voltar>h2:nth-child(3){
+    display: none;
+}
+.voltar>img{
+    margin-right: 8%;
+    height: fit-content;
+}
+.fotoUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 10%;
+}
+.backgroundIcon{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoIcon{
+    background-color: #F93030;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15%;
+    padding: 2%;
+}
+.container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8%;
+    background-color: white;
+    border-radius: 32px 32px 0 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.campo{
+    margin: 7% 0 5% 0;
+}
+.campo p{
+    font-size: 85%;
+}
+.botao{
+    color: #FFFFFF;
+    border: none;
+    font-size: medium;
+    border-radius: 8px;
+    padding: 5%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    body{
+        background-size: cover;
+    }
+    h1{
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 35%;
+        left: 12%;
+        font-size: 700%;
+        font-weight: 900;
+        width: 450px;
+        text-align: center;
+    }
+    .voltar{
+        margin: 2% 0 0 2%;
+    }
+    .voltar>h2:nth-child(2){
+        display: none;
+    }
+    .voltar>h2:nth-child(3){
+        display: block;
+    }
+    .voltar>img{
+        width: 50px;
+    }
+    .voltar>h2{
+        margin: 0;
+        font-size: 400%;
+    }
+    .container{
+        border-radius: 32px 0px 0 32px;
+        right: 0;
+        height: 100%;
+        width: 50%;
+    }
+    .fotoUsuario{
+        /* display: none; */
+    }
+.botao{
+    padding: 1%;
+}
+
+}

@@ -1,0 +1,402 @@
+:root{
+    --tamanho-categoria: 70px;
+    --sombra: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    --padding: 8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+
+}
+
+html{
+    overflow: hidden;
+}
+body{
+    background: linear-gradient(rgb(252,121,0,100%), rgb(252,121,0,0%));
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+main{
+    height: 100%;
+}
+header{
+    padding: 5%;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.up img{
+    height: 100%;
+}
+.boasVindas>h1{
+    font-size: 120%;
+}
+.searchBar{
+    margin: .8rem 0 .5rem 0;
+    background-color: white;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    border-radius: .5rem;
+}
+.searchBar>input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+.searchBar>img{
+    height: fit-content;
+    width: fit-content;
+}
+.search{
+    color: black;
+}
+.title{
+    font-weight: bolder;
+    text-shadow: 2px 3px 6px black;
+    margin: 0 1rem 0 1rem;
+}
+.categorias{
+    position: relative;
+    height: 120px;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.holder::-webkit-scrollbar{
+    display: none;
+}
+.holder{
+    height: 100%;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.categorias img{
+    display: none;
+}
+.lista-categorias{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 1rem 0 1rem 0.8rem;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+.categoria{
+    height: var(--tamanho-categoria);
+    width: var(--tamanho-categoria);
+    border-radius: 6px;
+    background-color: #F93030;
+    box-shadow: var(--sombra);
+}
+.categoria:nth-child(1){
+    background-image: url(../img/categorias/Vector.png);
+}
+.categoria:nth-child(2){
+    background-image: url(../img/categorias/Kawaii\ Soda.png);
+}
+.categoria:nth-child(3){
+    background-image: url(../img/categorias/Watermelon.png);
+}
+.categoria:nth-child(4){
+    background-image: url(../img/categorias/Pizza.png);
+}
+.categoria:nth-child(5){
+    background-image: url(../img/categorias/Ice\ Cream\ Sundae.png);
+}
+.categoria:nth-child(6){
+    background-image: url(../img/categorias/Kawaii\ Ice\ Cream.png);
+}
+.linhas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60%;
+}
+.linha{
+    position: relative;
+}
+.lista-favoritas{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 1rem 0 1rem 0.8rem;
+}
+.favorita{
+        height: 100px;
+        width: 160px;
+        border-radius: 8px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        box-shadow: var(--sombra);
+}
+.preco{
+    background-color: #F01212;
+    font-weight: bolder;
+    font-size: 70%;
+    width: fit-content;
+    padding: 3%;
+    border-radius: 50px;
+    margin: 2px;
+    white-space: nowrap;
+    height: fit-content;
+    z-index: 1;
+}
+.nomePizza{
+    font-weight: bold;    
+    font-size: 70%;
+    width: 80%;
+    padding: 10%;
+    border-bottom-left-radius: 6px;
+    text-shadow: 3px 3px 2px black;
+}
+.fundoTitulo{
+    background-color: rgba(0, 0, 0, 0.550);
+    padding: 2%;
+    width: 75%;
+}
+.lista-recomendados{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 1rem 0 1rem 0.8rem;
+}
+.recomendado{
+        height: 120px;
+        width: 190px;
+        border-radius: 6px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        box-shadow: var(--sombra);
+}
+.linhaBebidas{
+    height: 30%;
+}
+.HBebidas{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.lista-bebidas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bebida{
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    padding: 2%;
+    box-shadow: var(--sombra);
+}
+.bebida img{
+    width: fit-content;
+    height: fit-content;
+}
+.imagemBebida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.contentBebida{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.contentBebida>.preco{
+    align-self: flex-end;
+}
+.textContentaBebida{
+    width: 50%;
+}
+.nomeBebida{
+    color: #000000;
+    font-weight: 900;   
+}
+.descricaoBebida{
+    color: #00000080;
+    font-size: small;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #F27706;
+    z-index: 1;
+}
+
+footer>*{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+footer img{
+    margin-bottom: 2%;
+}
+
+.desaparecer{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    footer{
+        display: none;
+    }
+    body{
+        padding-left: var(--padding);
+    }
+    header{
+        padding: 0;
+        margin: 4%;
+        margin-bottom: 1%;
+
+    }
+    .up{
+        display: none;
+    }
+    .searchBar{
+        margin: 0rem 0 0rem 0;
+        padding: 0 1% 0 1.5%;
+    }
+    .searchBar>input{
+        font-size: 110%;
+    }
+    .title{
+        font-size: 200%;
+    }
+    .categorias{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #e8eb44;
+        height: 100%;
+        width: var(--padding);
+        padding: 1%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+    .categorias img {
+        display: block;
+        width: 50%;
+    }
+    .categorias>p{
+        display: none;
+    }
+    .categorias>a{
+        display: flex;
+        justify-content: center;
+    }
+    .categorias>a>img{
+        width: 80%;
+    }
+    .lista-categorias{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .categoria{
+        height: 90px;
+        width: 90px;
+        margin: 10%
+    }
+    .holder{
+        display: flex;
+        align-items: center;
+    }
+    .linha{
+        margin-top: 1%;
+        margin-left: 4%;
+    }
+    .linha>p{
+        height: 10%;
+        margin-bottom: 2%;
+    }
+    .lista-favoritas{
+        margin: 0;
+        height: 50%;
+    }
+    .favorita{
+        height: 190px;
+        width: 250px;
+        background-size: cover;
+    }
+    .favorita>.fundoTitulo{
+        height: 35%;
+        font-size: 100%;
+    }
+    .favorita>.preco{
+        margin: 4%
+    }
+    .lista-recomendados{
+        margin: 0
+    }
+    .lista-bebidas{
+        flex-direction: row;
+        margin: 0rem 0 0rem 0rem;
+        
+    }
+    .linhaBebidas{
+        position: static;
+        bottom: 5%;
+        width: 96%;
+    }
+    .HBebidas{
+        width: 98%;
+        flex-direction: row;
+        overflow-y: visible;
+        display: flex;
+        align-items: start;
+    }
+    .bebida{
+        height: 100%;
+        width: 350px;
+        padding: .5%;
+        margin-right: 2%;
+    }
+    .contentBebida>.preco{
+        align-self: center;
+    }
+}

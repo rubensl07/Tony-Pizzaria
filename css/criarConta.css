@@ -1,0 +1,32 @@
+.backgroundIcon{
+    background-color: #C4C4C4;
+    padding: 2%;
+}
+.fotoIcon{
+    margin-left: -10%;
+    padding: 1%;
+}
+.container{
+    height: 72%;
+}
+.campo>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+
+
+.botao{
+    background-color: #199570;
+    font-weight: bold;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .container{
+        height: 100%;
+    }
+}

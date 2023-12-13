@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+body{
+    background-image: url(../img/pizza_back\ 1.png);
+    background-size: 400%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+.fundo{
+    background: linear-gradient(rgb(252, 122, 0), rgba(252, 122, 0, 0));
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+.container{
+    height: 100%;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7%;
+}
+.titulo{
+    display: flex;
+    align-items: end;
+}
+.titulo>img{
+    width: 45%;
+}
+.titulo>h1{ 
+    font-family: 'Pattaya', sans-serif;
+    line-height: 80%;
+    width: 100px;
+    font-weight: lighter;
+}
+.texto-inicial>h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 250%;
+    width: 80%;
+}
+.texto-inicial>p{
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.botao{
+    border: 15px solid white;
+    border-radius: 16px;
+    background-color: white;
+    font-size: 150%;
+    font-weight: bolder;
+    color: #F27706;
+    margin-top:18%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    *{
+        text-align: center;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+    }
+    .container {
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 15% 0px 15%;
+    }
+    .titulo{
+        justify-content: center;
+        width: 100%;
+    }
+    .titulo>img{
+        width:250px;
+    }
+    .titulo>h1{
+        font-size: 600%;
+        display: flex;
+        margin-left: -8%;
+        width: 400px;
+    }
+    .texto-inicial>h2{
+        font-size: 500%;
+        font-weight: bolder;
+    }
+    .texto-inicial>p{
+        font-size: 300%;
+        margin-top: 2%;
+    }
+    .botao{
+        font-size: 300%;
+        padding: 1%;
+        border-right: 100px solid white;
+        border-left: 100px solid white;
+        width: fit-content;
+        margin-top:5%;
+        cursor: pointer;
+
+    }
+}

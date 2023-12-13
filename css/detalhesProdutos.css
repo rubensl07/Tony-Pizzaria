@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.voltar{
+    margin: 10% 0 0 5%;
+    width: fit-content;
+}
+
+body{
+    background-image: url(../img/infoProduto/pizza_info.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8%;
+    background-color: white;
+    border-radius: 32px 32px 0 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+    font-size: 150%;
+    width: 80%;
+}
+
+.container h2 {
+    color: #23CB98;
+    font-size: 130%;
+    margin: 3% 0 3% 0;
+}
+
+.container p {
+    color: #999999;
+    font-size: 76%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0 3% 0;
+}
+
+.stars>img {
+    width: fit-content;
+    height: fit-content;
+    margin: -.6%;
+}
+
+.titleComentarios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    margin: 8% 0 3% 0;
+}
+
+.fotoUsuario {
+    width: fit-content;
+    height: fit-content;
+}
+
+.titleComentarios>h2 {
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+    font-size: 100%;
+}
+
+.comentario {
+    padding: 3%;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    margin: 3% 0 3% 0;
+}
+
+.comentSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comentInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.comentData {
+    flex-direction: column;
+}
+
+.avaliacao {
+    display: flex;
+    justify-content: end;
+}
+
+.avaliacao>img {
+    height: fit-content;
+    width: fit-content;
+    margin: -3%;
+}
+
+.desaparecer {
+    display: none;
+}
+
+.comentarioIntroducao {
+    font-weight: bolder;
+}

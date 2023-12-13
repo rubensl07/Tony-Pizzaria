@@ -1,0 +1,82 @@
+.container-login{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+    margin: 10% 0% 0% 0%;
+}
+.login>img{
+    margin: 1% 2% 1% 0px;
+}
+.login>input{
+    border: none;
+    width: 100%;
+    background: none;
+    font-size: large;
+}
+.esqueciSenha{
+    align-self: end;
+    margin-top: 8%;
+    font-weight: bold;
+}
+.criarConta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.criarConta>p{
+    margin: 5%;
+}
+
+@media (min-width: 768px) {
+.login>img{
+    height: 100%;
+    width: 5%;
+}
+.texto-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-inicial>h2{
+    text-transform: uppercase;
+    font-size: 300%;
+}
+.texto-inicial>p{
+    font-size: 150%;
+    margin-top: 2%;
+}
+.login{
+    padding: 0;
+    margin: 0;
+}
+.login>input{
+    text-align: start;
+    font-size: 160%;
+}
+.inferior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-login{
+    width: 100%;
+}
+.esqueciSenha{
+    margin: 0;
+}
+.criarConta{
+    width: 100%;
+}
+.criarConta>p{
+    margin: 1%;
+}
+}
